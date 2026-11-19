@@ -1,91 +1,169 @@
 # NotesApp
 
-A full-stack notes application built with React, Node.js, Express, and MongoDB.
+**🇬🇧 [English](#-english) | 🇸🇦 [العربية](#-العربية)**
 
-## Features
+---
 
-- User Registration and Login
-- Create, Read, Update, and Delete (CRUD) notes
-- Secure authentication with JWT
-- Responsive design
+## 🇬🇧 English
 
-## Tech Stack
+### Overview
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- JWT for authentication
-- bcryptjs for password hashing
-- Cookie-parser
+A full-stack notes application built with React, Node.js, Express, and MongoDB, featuring user authentication and full CRUD note management.
 
-### Frontend
-- React.js
-- Redux Toolkit
-- React Router
-- Vite
+### Features
 
-## Getting Started
+- User registration and login.
+- Create, read, update, and delete (CRUD) notes.
+- Secure authentication with JWT.
+- Responsive design.
 
-### Prerequisites
+### Tech Stack
 
+| Layer | Technologies |
+|---|---|
+| Backend | Node.js, Express.js, MongoDB (Mongoose), JWT, bcryptjs, cookie-parser |
+| Frontend | React.js, Redux Toolkit, React Router, Vite |
+
+### Getting Started
+
+#### Prerequisites
 - Node.js installed
 - MongoDB installed and running
 
-### Installation
+#### Installation
 
-1. Clone the repository
-2. Install backend dependencies:
-   ```
-   cd Backend
-   npm install
-   ```
+```bash
+# Backend
+cd Backend
+npm install
 
-3. Install frontend dependencies:
-   ```
-   cd Frontend
-   npm install
-   ```
+# Frontend
+cd Frontend
+npm install
+```
 
-### Running the Application
+#### Running the Application
 
-1. Start the backend server:
-   ```
-   cd Backend
-   npm start
-   ```
+```bash
+# Backend
+cd Backend
+npm start
 
-2. Start the frontend:
-   ```
-   cd Frontend
-   npm run dev
-   ```
+# Frontend
+cd Frontend
+npm run dev
+```
 
-3. Open your browser and navigate to `http://localhost:5173`
+Then open `http://localhost:5173` in your browser.
 
-## Environment Variables
+#### Environment Variables (Backend `.env`)
 
-### Backend (.env)
 ```
 PORT=5000
 SecriteKey=your_secret_key
 ```
 
-## API Endpoints
+### API Endpoints
 
-### Auth Routes
-- `POST /auth/register` - Register a new user
-- `POST /auth/login` - Login user
-- `POST /auth/logout` - Logout user
-- `GET /auth/islogin` - Check if user is logged in
+**Auth**
+- `POST /auth/register` — Register a new user
+- `POST /auth/login` — Login user
+- `POST /auth/logout` — Logout user
+- `GET /auth/islogin` — Check if user is logged in
 
-### Notes Routes
-- `POST /notes/create` - Create a new note
-- `GET /notes/getnotes` - Get all notes
-- `PUT /notes/update/:id` - Update a note
-- `DELETE /notes/delete/:id` - Delete a note
+**Notes**
+- `POST /notes/create` — Create a new note
+- `GET /notes/getnotes` — Get all notes
+- `PUT /notes/update/:id` — Update a note
+- `DELETE /notes/delete/:id` — Delete a note
 
-## License
+### License
 
 ISC
 
+### Author
+
+**Mohammad Molazem** — [GitHub](https://github.com/eng-molazem) · [LinkedIn](https://www.linkedin.com/in/mohammad-molazem/)
+
+---
+
+## 🇸🇦 العربية
+
+### نظرة عامة
+
+تطبيق ملاحظات متكامل (Full-stack) مبني بـReact وNode.js وExpress وMongoDB، مع نظام مصادقة للمستخدمين وإدارة كاملة للملاحظات (CRUD).
+
+### المزايا
+
+- تسجيل حساب ودخول للمستخدمين.
+- إنشاء، قراءة، تعديل، وحذف الملاحظات (CRUD).
+- مصادقة آمنة عبر JWT.
+- تصميم متجاوب.
+
+### البنية التقنية
+
+| الطبقة | التقنيات |
+|---|---|
+| الخلفية (Backend) | Node.js, Express.js, MongoDB (Mongoose), JWT, bcryptjs, cookie-parser |
+| الواجهة (Frontend) | React.js, Redux Toolkit, React Router, Vite |
+
+### التشغيل محلياً
+
+#### المتطلبات
+- Node.js مثبّت
+- MongoDB مثبّتة وتعمل
+
+#### التثبيت
+
+```bash
+# الخلفية
+cd Backend
+npm install
+
+# الواجهة
+cd Frontend
+npm install
+```
+
+#### تشغيل التطبيق
+
+```bash
+# الخلفية
+cd Backend
+npm start
+
+# الواجهة
+cd Frontend
+npm run dev
+```
+
+ثم افتح `http://localhost:5173` في المتصفح.
+
+#### متغيرات البيئة (Backend `.env`)
+
+```
+PORT=5000
+SecriteKey=your_secret_key
+```
+
+### نقاط الوصول (API Endpoints)
+
+**المصادقة**
+- `POST /auth/register` — تسجيل مستخدم جديد
+- `POST /auth/login` — تسجيل الدخول
+- `POST /auth/logout` — تسجيل الخروج
+- `GET /auth/islogin` — التحقق من حالة تسجيل الدخول
+
+**الملاحظات**
+- `POST /notes/create` — إنشاء ملاحظة جديدة
+- `GET /notes/getnotes` — جلب كل الملاحظات
+- `PUT /notes/update/:id` — تعديل ملاحظة
+- `DELETE /notes/delete/:id` — حذف ملاحظة
+
+### الترخيص
+
+ISC
+
+### المطوّر
+
+**محمد ملازم** — [GitHub](https://github.com/eng-molazem) · [LinkedIn](https://www.linkedin.com/in/mohammad-molazem/)
